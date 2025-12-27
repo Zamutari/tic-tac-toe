@@ -1,0 +1,134 @@
+
+
+.board {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  gap: 5px;
+}
+
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: yellowgreen;
+  font-weight: 200;
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: yellowgreen;
+}
+
+.cell {
+  border-radius: 0;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  background: rgb(0, 0, 0);   /* кнопки обычно имеют фон, делаем белый */
+  padding: 0;        /* убираем внутренние отступы кнопки */
+}
+
+.cell:hover {
+  background-color: #0e0e0e;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.opacity {
+    opacity: 0.4;
+}
+
+@keyframes blink {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 2️⃣ Класс, который мигает */
+.winColor {
+  animation: blink 0.8s ease-in-out infinite;
+}
+
+.opacityBlack {
+  color: black;
+}
+
+.buttonSide {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px white solid;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.buttonSide button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+  margin: 2px;
+  height: 50px;
+  padding: 3px 10px 3px 10px;
+  width: 150px;
+}
+
+.buttonSide button:hover {
+background-color: #eae9e9;
+}
+
+.buttonSide button:hover span {
+background-color: #eae9e9;
+}
+
+.buttonSide button span {
+  font-weight:bolder;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  padding: 3px;
+  font-size: 30px;
+}
+
+.buttonSide .circle  {
+  font-size: 30px;
+  color: red;
+  font-weight: bolder;
+}
+
+.buttonSide .iks  {
+  color: blue;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.btn {
+  opacity: 0.9;
+}
+
+.btn:hover {
+  background-color: #fff;
+}
+
+.replay {
+  color: yellowgreen;
+}
