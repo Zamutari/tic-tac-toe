@@ -21,7 +21,7 @@ h2 {
 
 .cell {
   border-radius: 0;
-  font-size: 3.5rem;
+  font-size: 4.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@ h2 {
 }
 
 .buttonSide {
-  background-color: red;
+  background-color: rgb(214, 214, 214);
   margin-bottom: 10px;
   display: flex;
   justify-content: center;

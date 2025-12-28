@@ -32,7 +32,7 @@ const initialBoard = [
 
 function Board() {
     const [board, setBoard] = useState(initialBoard);
-    const [currentEelemnt, setCurrentElement] = useState('◯');
+    const [currentEelemnt, setCurrentElement] = useState('〇');
     const [wonNumbers, setWonNumbers] = useState([]);
     const [isFinished, setIsFinished] = useState(false);
     const [winShape, setWinShape] = useState(null);
@@ -47,10 +47,10 @@ function Board() {
     };
 
     const changeCurrentElement = () => {
-        if (currentEelemnt === '◯') {
-            setCurrentElement('✕')
+        if (currentEelemnt === '〇') {
+            setCurrentElement('ㄨ')
         } else {
-            setCurrentElement('◯')
+            setCurrentElement('〇')
         };
     }
 
@@ -141,14 +141,14 @@ function Board() {
                 onClick={() => changeCurrentElement()}
                 >
                     change
-                    <span className={currentEelemnt === '◯' ? 'circle' : 'iks'}>{currentEelemnt}</span>
+                    <span className={currentEelemnt === '〇' ? 'circle' : 'iks'}>{currentEelemnt}</span>
                     </button>
             </div>
             <div className='board'>
                 {board.map((cell, i) => {
                     return <div
                         className={`cell ${cell.condition ?
-                            cell.condition === '◯' ? 'red' : 'blue' : ''
+                            cell.condition === '〇' ? 'red' : 'blue' : ''
                             }`}
                         key={i}
                         onClick={() => putCondition(i, cell)}
