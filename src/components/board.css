@@ -3,8 +3,8 @@
 .board {
   background-color: rgb(255, 255, 255);
   display: grid;
-  grid-template-columns: repeat(3, 120px);
-  grid-template-rows: repeat(3, 120px);
+  grid-template-columns: repeat(3, 95px);
+  grid-template-rows: repeat(3, 95px);
   gap: 5px;
 }
 
@@ -21,7 +21,7 @@ h2 {
 
 .cell {
   border-radius: 0;
-  font-size: 5rem;
+  font-size: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,12 +47,12 @@ h2 {
     opacity: 0.4;
 }
 
-@keyframes blink {
+@keyframes blink-text {
   0% {
     transform: scale(1);
   }
-  30% {
-    transform: scale(1.05);
+  50% {
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);
@@ -61,7 +61,7 @@ h2 {
 
 /* 2️⃣ Класс, который мигает */
 .winColor {
-  animation: blink 0.8s ease-in-out infinite;
+  animation: blink-text 2.0s  infinite;
 }
 
 .opacityBlack {
@@ -69,6 +69,7 @@ h2 {
 }
 
 .buttonSide {
+  background-color: #a1a1a1;
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
@@ -87,9 +88,9 @@ h2 {
   background-color: white;
   cursor: pointer;
   margin: 2px;
-  height: 50px;
+  height: 45px;
   padding: 3px 10px 3px 10px;
-  width: 150px;
+  width: 140px;
 }
 
 .buttonSide button:hover {
@@ -106,18 +107,18 @@ background-color: #eae9e9;
   background-color: rgb(255, 255, 255);
   width: 50px;
   padding: 3px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .buttonSide .circle  {
-  font-size: 30px;
+  font-size: 25px;
   color: red;
   font-weight: bolder;
 }
 
 .buttonSide .iks  {
   color: blue;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bolder;
 }
 
@@ -130,5 +131,6 @@ background-color: #eae9e9;
 }
 
 .replay {
+  display: inline-block;
   color: yellowgreen;
 }

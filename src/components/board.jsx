@@ -153,7 +153,7 @@ function Board() {
                         key={i}
                         onClick={() => putCondition(i, cell)}
                     >
-                        <div className={`${cell.count === 6 ? 'opacity' : ''} ${wonNumbers.includes(cell.id) ? 'winColor' : ''}`}>{cell.condition}</div>
+                        <div className={`${cell.count === 6 ? 'opacity' : ''} ${wonNumbers.includes(cell.id) ? 'winColor' : isFinished? 'opacity': ''}`}>{cell.condition}</div>
                     </div>
                 })}
             </div>
