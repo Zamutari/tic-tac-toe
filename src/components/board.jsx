@@ -48,7 +48,7 @@ function Board() {
 
     const changeCurrentElement = () => {
         if (currentEelemnt === '◯') {
-            setCurrentElement('✖')
+            setCurrentElement('✕')
         } else {
             setCurrentElement('◯')
         };
